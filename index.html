@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#087e91">
+  <meta name="description" content="Discover Bamburi Beach Resort in Mombasa. Explore our ocean-view rooms, suites, dining, facilities and request an accommodation quotation.">
+  <title>Bamburi Beach Resort | Mombasa, Kenya</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Bamburi Beach Resort home">
+      <span class="brand-mark">BBR</span>
+      <span><strong>BAMBURI</strong><small>BEACH RESORT</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="main-nav" id="mainNav">
+      <a href="#home">Home</a><a href="#accommodation">Accommodation</a><a href="#experiences">Experiences</a><a href="#dining">Dining</a><a href="#meetings">Meetings & Events</a>
+      <a class="nav-cta" href="#quotation">Get a quotation</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow light">BAMBURI · MOMBASA · KENYA</p>
+        <h1>Where the ocean<br><em>meets your escape.</em></h1>
+        <p>Experience coastal comfort, ocean views and relaxed resort living at Bamburi Beach Resort.</p>
+        <div class="hero-actions"><a class="button button-light" href="#accommodation">Explore accommodation</a><a class="text-link light-link" href="#quotation">Request a quotation <span>→</span></a></div>
+      </div>
+      <div class="hero-caption">A coastal retreat on the Kenyan coast</div>
+    </section>
+
+    <section class="intro section-wrap">
+      <div class="section-kicker">WELCOME TO BAMBURI</div>
+      <div class="intro-grid">
+        <h2>A place to slow down<br>and <em>feel the coast.</em></h2>
+        <p>Discover a welcoming beachfront setting with comfortable accommodation, dining experiences and spaces to relax, reconnect or gather. Explore the resort and request a tailored quotation for your stay.</p>
+      </div>
+    </section>
+
+    <section class="feature-strip" id="experiences">
+      <div class="feature-photo"></div>
+      <div class="feature-copy">
+        <p class="eyebrow">FACILITIES & EXPERIENCES</p>
+        <h2>Make room for<br><em>the good moments.</em></h2>
+        <p>From time by the pool to relaxed resort spaces, Bamburi Beach Resort brings together the essentials for a memorable coastal stay.</p>
+        <div class="feature-list"><span>Swimming pool</span><span>Beachside setting</span><span>Meetings & events</span><span>Dining experiences</span><span>Bars & relaxation</span></div>
+      </div>
+    </section>
+
+    <section class="section-wrap rooms-section" id="accommodation">
+      <div class="section-heading">
+        <div><p class="eyebrow">STAY WITH US</p><h2>Accommodation <em>for every escape.</em></h2></div>
+        <p>Explore our four tariff-listed accommodation categories. Select your preferred room when requesting a quotation.</p>
+      </div>
+      <div class="room-grid">
+        <article class="room-card">
+          <div class="room-image room-one"><span class="room-tag">Ocean view</span></div>
+          <div class="room-info"><h3>Superior Ocean View Room</h3><p>A comfortable room category with an ocean-view setting. See the tariff and request a quotation for your dates.</p><a href="#quotation" class="text-link">Request a quotation <span>→</span></a></div>
+        </article>
+        <article class="room-card">
+          <div class="room-image room-two"><span class="room-tag">Private plunge pool</span></div>
+          <div class="room-info"><h3>Ocean View With Plunge Pool</h3><p>An ocean-view accommodation category featuring a private plunge-pool experience.</p><a href="#quotation" class="text-link">Request a quotation <span>→</span></a></div>
+        </article>
+        <article class="room-card">
+          <div class="room-image room-three"><span class="room-tag">Suite</span></div>
+          <div class="room-info"><h3>Ocean Front Suite</h3><p>A suite category presented in the resort factsheet with a private Jacuzzi room presentation.</p><a href="#quotation" class="text-link">Request a quotation <span>→</span></a></div>
+        </article>
+        <article class="room-card">
+          <div class="room-image room-four"><span class="room-tag">Suite</span></div>
+          <div class="room-info"><h3>Ocean Breeze Suite</h3><p>A premium suite category. Contact reservations to confirm the specific room features and availability.</p><a href="#quotation" class="text-link">Request a quotation <span>→</span></a></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="quote-section" id="quotation">
+      <div class="quote-intro">
+        <p class="eyebrow light">PLAN YOUR STAY</p>
+        <h2>Get your accommodation<br><em>quotation.</em></h2>
+        <p>Enter your stay details and select your room. The calculator applies the published 2026/2027 tariff and prepares a pro-forma quotation for you to share with our reservations team.</p>
+        <div class="notice"><strong>Please note</strong><br>This is a quotation request, not a confirmed reservation. Availability must be checked and confirmed by our reservations team.</div>
+      </div>
+      <form class="quote-form" id="quoteForm">
+        <div class="form-title"><span>01 / YOUR STAY</span><h3>Quotation details</h3></div>
+        <div class="form-grid">
+          <label>Check-in date<input type="date" id="checkIn" required min="2026-11-20"></label>
+          <label>Check-out date<input type="date" id="checkOut" required></label>
+          <label class="full">Room category<select id="roomType" required>
+            <option value="superior">Superior Ocean View Room</option>
+            <option value="plunge">Ocean View With Plunge Pool</option>
+            <option value="front">Ocean Front Suite</option>
+            <option value="breeze">Ocean Breeze Suite</option>
+          </select></label>
+          <label>Occupancy<select id="occupancy"><option value="double">Double room</option><option value="single">Single room</option></select></label>
+          <label>Number of rooms<input type="number" id="roomCount" min="1" max="20" value="1" required></label>
+          <label>Adults<input type="number" id="adultCount" min="1" max="40" value="2" required></label>
+          <label>Children (2–17 years)<input type="number" id="childCount" min="0" max="20" value="0"></label>
+          <label class="full">Children's ages (if applicable)<input type="text" id="childAges" placeholder="Example: 5, 9 (separate ages with commas)"></label>
+        </div>
+        <div class="form-title form-title-spaced"><span>02 / YOUR CONTACT</span><h3>Guest details</h3></div>
+        <div class="form-grid">
+          <label>Full name<input type="text" id="guestName" autocomplete="name" required placeholder="Your full name"></label>
+          <label>Phone / WhatsApp<input type="tel" id="guestPhone" autocomplete="tel" required placeholder="+254..."></label>
+          <label class="full">Email address <span class="optional">(optional)</span><input type="email" id="guestEmail" autocomplete="email" placeholder="name@example.com"></label>
+        </div>
+        <button class="button button-primary submit-button" type="submit">Calculate & generate quotation <span>→</span></button>
+        <p class="form-footnote">Minimum stay: 2 nights. All rates are in Kenya Shillings (KES) and are subject to the resort's reservation terms.</p>
+      </form>
+    </section>
+
+    <section class="invoice-section section-wrap hidden" id="invoiceSection" aria-live="polite">
+      <div class="invoice-toolbar"><div><p class="eyebrow">YOUR QUOTATION</p><h2>Quotation <em>summary.</em></h2></div><div class="invoice-actions"><button class="button button-outline" id="printInvoice" type="button">Print / Save PDF</button><button class="button button-whatsapp" id="shareInvoice" type="button" disabled>Share via WhatsApp</button></div></div>
+      <div class="invoice-paper" id="invoicePaper"></div>
+      <p class="availability-note"><strong>Availability status: PENDING CONFIRMATION.</strong> This document is an accommodation quotation only. It does not reserve or guarantee a room. Please share it with the reservations team for an availability check.</p>
+    </section>
+
+    <section class="dining-section section-wrap" id="dining">
+      <div class="section-heading"><div><p class="eyebrow">TASTE THE COAST</p><h2>Dining <em>experiences.</em></h2></div><p>Discover the resort's dining venues and relaxed spaces for meals, refreshments and social moments.</p></div>
+      <div class="dining-grid">
+        <article class="dining-card dining-main"><div class="dining-photo"></div><div><span class="eyebrow">RESTAURANTS</span><h3>Dining by the coast</h3><p>Explore the dining experiences presented in the resort factsheet. Contact reservations for current meal arrangements and service times.</p></div></article>
+        <article class="dining-card"><div class="bar-photo"></div><div><span class="eyebrow">BARS</span><h3>Relax and unwind</h3><p>Resort bar spaces for a laid-back coastal atmosphere.</p></div></article>
+      </div>
+    </section>
+
+    <section class="meetings-section" id="meetings"><div class="meetings-image"></div><div class="meetings-copy"><p class="eyebrow">GATHER BY THE COAST</p><h2>Meetings & <em>events.</em></h2><p>Explore Bamburi Beach Resort for your meetings, gatherings and special occasions. Contact our team to discuss your requirements.</p><a class="text-link" href="#contact">Make an enquiry <span>→</span></a></div></section>
+
+    <section class="contact-section section-wrap" id="contact">
+      <div><p class="eyebrow">WE'RE HERE TO HELP</p><h2>Start planning<br><em>your stay.</em></h2></div>
+      <div class="contact-details"><p>Bamburi Beach Resort<br>P.O. Box 83966, Mombasa 80100, Kenya</p><p><strong>Reservations</strong><br><a href="mailto:bamburibeachresort@gmail.com">bamburibeachresort@gmail.com</a><br><a href="tel:0101956633">0101956633</a> / <a href="tel:0208237083">0208237083</a></p><a class="button button-primary" href="#quotation">Get a room quotation</a></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><a class="brand footer-brand" href="#home"><span class="brand-mark">BBR</span><span><strong>BAMBURI</strong><small>BEACH RESORT</small></span></a><p>Coastal comfort in Bamburi, Mombasa, Kenya.</p><small>© <span id="year"></span> Bamburi Beach Resort. All rights reserved.</small></footer>
+  <script src="app.js"></script>
+</body>
+</html>
