@@ -1,3 +1,4 @@
+
 :root {
   --ocean:#315b68; --deep:#193d49; --sand:#e8dfd0; --cream:#f7f3eb;
   --gold:#a98a54; --ink:#292d2d; --muted:#6d706e; --white:#fff; --line:#ded8cc;
@@ -109,22 +110,30 @@ img{max-width:100%}
 .contact-details strong{color:var(--deep)}
 .contact-details a:not(.button):hover,.footer-socials a:hover{color:var(--ocean)}
 .contact-details .button{margin-top:14px}
-.social-links{display:flex;gap:18px;flex-wrap:wrap;margin:24px 0}
-.social-links a{display:inline-flex;align-items:center;gap:7px;font-size:12px;color:var(--deep)}
-.social-icon{width:23px;height:23px;display:inline-flex;align-items:center;justify-content:center;border-radius:50%;font-size:14px;font-weight:700;background:var(--deep);color:#fff}
-.facebook-icon{font-family:Arial,sans-serif}
-.tiktok-icon{font-size:16px}
-.instagram-icon{font-size:17px}
+
+/* SOCIAL MEDIA BRAND LOGOS */
+.social-links{display:flex;gap:20px;flex-wrap:wrap;margin:24px 0}
+.social-links a{display:inline-flex;align-items:center;gap:8px;font-size:12px;color:var(--deep);font-weight:600}
+.social-logo{width:25px;height:25px;display:inline-block;flex-shrink:0;vertical-align:middle}
+.facebook-logo{color:#1877F2}
+.tiktok-logo{width:25px;height:25px}
+.instagram-logo{width:25px;height:25px}
+
 .site-footer{background:#142f37;color:#dbe2df;padding:38px 8%;display:grid;grid-template-columns:1fr 1fr;gap:12px 25px;align-items:center}
 .footer-brand{color:#fff}.footer-brand .brand-logo{background:#fff;border-radius:50%}
 .site-footer>p{font-size:11px;color:#c3cfca;margin:0}
-.footer-socials{display:flex;gap:18px;font-size:11px}
+.footer-socials{display:flex;align-items:center;gap:20px;flex-wrap:wrap;font-size:11px}
+.footer-socials a{display:inline-flex;align-items:center;gap:7px;color:#dbe2df}
+.footer-socials .social-logo{width:21px;height:21px}
+.footer-socials .facebook-logo{color:#fff}
 .site-footer>small{font-size:10px;color:#aebcb7;text-align:right}
+
 .floating-contact{position:fixed;right:22px;bottom:22px;z-index:80;display:flex;flex-direction:column;gap:11px}
 .floating-contact a{width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 5px 18px #0003;color:#fff}
 .floating-contact svg{width:25px;height:25px;display:block}
 .floating-whatsapp{background:#1b9d61}
 .floating-call{background:var(--deep)}
+
 @media(max-width:950px){
   .main-nav{gap:13px;font-size:10px}
   .quote-section{gap:5%}
@@ -179,6 +188,7 @@ img{max-width:100%}
   .hero h1{font-size:39px}
   .button{padding:12px 16px}
   .social-links{gap:13px}
+  .footer-socials{gap:16px}
 }
 @media print{
   body *{visibility:hidden}
